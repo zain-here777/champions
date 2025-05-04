@@ -1,0 +1,54 @@
+@use "variables";
+
+$max-width-prefix: "mw";
+
+$font-sizes: (
+        10: 10px,
+        12: 12px,
+        14: 14px,
+        16: 16px,
+        18: 18px,
+        20: 20px,
+        22: 22px,
+        24: 24px
+);
+
+@for $i from 1 through 10 {
+  .#{$max-width-prefix}-#{$i * 10} {
+    max-width: #{($i * 10) + '% !important'};
+  }
+}
+
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: variables.$clanBlack;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.purple {
+  color: variables.$purple;
+}
+.blue-purple{
+  color: #8e2baf;
+}
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+.visible {
+  visibility: visible;
+  opacity:1;}

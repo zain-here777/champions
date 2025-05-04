@@ -1,0 +1,1668 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Champions</title>
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css"
+          integrity="sha512-Cn5/xnOLSKjVpNCsJZCtgQhxp00FcFnlRwgbSG7WGFq1BVvyG+LoOarjXAq//8Vstyu0Na9wvEKLWR67/wAy3w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+          integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+          integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom py-3 upper-nav">
+    <div class="container-lg">
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand d-none d-lg-block" href="#">
+            <div class="logo-placeholder"></div>
+        </a>
+
+        <div class="d-flex align-items-center gap-3">
+            <form class="d-none d-lg-flex mx-auto tc-nav-search">
+                <input class="form-control search-box" type="search" placeholder="Search">
+                <img src="./assets/images/icons/search.svg" alt="">
+            </form>
+            <div class="d-flex align-items-center gap-2">
+                <img style="max-width: 30px" src="assets/images/icons/globe.svg" alt="">
+                <a href="#" class="me-3 text-decoration-none text-white">AR</a>
+            </div>
+            <div>
+                <a href="">
+                    <img style="max-width: 100px;" src="assets/images/icons/ticket-btn.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Lower Navbar (visible only on large screens and up) -->
+<div class="bg-primary-custom d-none d-lg-block py-2 lower-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white ps-0" href="#">National Team</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Competitions</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Football in Qatar</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">Regulations</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sub Item</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sub Item</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Football Development</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">Media Center</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sub Item</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Tenders</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Referees</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+            <img src="assets/images/icons/chat.svg" alt="">
+            <a class="nav-link text-white" href="#">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="#">
+            <div class="logo-placeholder"></div>
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form class=" d-flex mx-auto tc-nav-search mb-3">
+            <input class="form-control search-box" type="search" placeholder="Search">
+            <img src="/assets/images/icons/search.svg" alt="">
+        </form>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">National Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Competitions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Football in Qatar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Regulations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Football Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Media Center</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tenders</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Referees</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-ticket-perforated"></i> Tickets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-chat-dots"></i> Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<header class="tc-header">
+    <div class="tc-header-socials">
+        <a href="" class="header-social-wrapper">
+            <img src="assets/images/icons/insta-vector.svg" alt="">
+        </a>
+        <a href="" class="header-social-wrapper">
+            <img src="assets/images/icons/yt-vector.svg" alt="">
+        </a>
+        <a href="" class="header-social-wrapper">
+            <img src="assets/images/icons/fb-vector.svg" alt="">
+        </a>
+        <a href="" class="header-social-wrapper">
+            <img src="assets/images/icons/x-vector.svg" alt="">
+        </a>
+    </div>
+    <div class="tc-header-content container-lg px-4 px-md-5 px-lg-0">
+        <div class="d-flex align-items-center gap-1 text-white invisible opacity-0" id="tc-status-para">
+            <h4 class="fw-bold">
+                01
+            </h4>
+            <h4 class="fw-bold">
+                -
+            </h4>
+            <h4 class="fw-bold" style="opacity: 0.5">
+                05
+            </h4>
+        </div>
+        <div class="tc-header-title invisible opacity-0" id="titleWrapper">
+            <h1>WE ARE</h1>
+            <h1>THE <span class="champ-title"> CHAMPIONS</span></h1>
+        </div>
+        <p class="py-3 mw-30 text-white intro-text invisible opacity-0" id="tc-paragraph">
+            Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla nunc. A
+            diam quam et at viverra et.
+        </p>
+        <div class="header-controls">
+            <div class="d-flex align-items-center gap-2 text-white">
+                <div class="tc-control-wrapper">
+                    <img src="assets/images/icons/play-icon.svg" alt="">
+                </div>
+                <p>
+                    Fixtures
+                </p>
+            </div>
+            <div class="d-flex align-items-center gap-2 text-white">
+                <div class="tc-control-wrapper">
+                    <img src="assets/images/icons/score-icon.svg" alt="">
+                </div>
+                <p>
+                    Live Score
+                </p>
+            </div>
+            <div class="d-flex align-items-center gap-2 text-white">
+                <div class="tc-control-wrapper">
+                    <img src="assets/images/icons/stats-icon.svg" alt="">
+                </div>
+                <p>
+                    Statistics
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="scroll-wrapper">
+    <div class="scroll-track">
+        <div class="scroll-content">
+            <div class="scroll-item">
+                <img src="assets/images/icons/flag-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/football-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/ground-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="scroll-item">
+                <img src="assets/images/icons/flag-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/football-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/ground-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/flag-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/football-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/ground-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/flag-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/football-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/ground-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/flag-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/football-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+            <div class="scroll-item">
+                <img src="assets/images/icons/ground-icon.svg" alt="icon"/>
+                <span>FOOTBALL IN QATAR</span>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="live-matches-section">
+    <div class="container-lg px-4 px-md-5 px-lg-0">
+        <div class="section-title" data-aos="fade-up">
+            <h1 class="hollow-heading">LIVE</h1>
+            <h1 class="filled-heading">MATCHES</h1>
+        </div>
+        <div class="position-relative">
+            <ul class="nav nav-pills mb-3 mt-3 mt-md-4 mt-lg-5 live-matches-pill" id="pills-tab" data-aos="fade-right"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        NATIONAL TEAM
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        OTHER MATCHES
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                     tabindex="0">
+                    <div class="glide glideTab1 live-glide mt-3 mt-md-5">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-1.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-cad-2.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-3.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-4.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-5.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-6.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-7.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-8.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <img src="assets/images/icons/left-slider-icon.svg" alt="">
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <img src="assets/images/icons/right-slider-icon.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                     tabindex="0">
+                    <div class="glide glideTab2 live-glide mt-3 mt-md-5">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-1.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-cad-2.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-3.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-4.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-5.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-6.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div data-aos="flip-up" class="live-card-hover-effect">
+                                        <div class="live-card-container">
+                                            <div class="live-card-body">
+                                                <div class="d-flex align-items-center justify-content-between align-items-center flex-grow-1">
+                                                    <div>
+                                                        <img src="assets/images/icons/live-card-7.svg" alt="">
+                                                        <h6>Umm Salal SC</h6>
+                                                    </div>
+                                                    <div>
+                                                        <div class="vs-wrapper">
+                                                            VS
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                                        <img src="assets/images/icons/live-card-8.svg" alt="">
+                                                        <h6>Al-Duhail SC</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="live-schedule">
+                                                    <img style="max-width: 10px"
+                                                         src="assets/images/icons/calender-icon.svg"
+                                                         alt="">
+                                                    <p>
+                                                        Saturday, May 12th
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="live-card-footer">
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="live-outlined-time">
+                                                        10
+                                                    </div>
+                                                    <div>
+                                                        :
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        00
+                                                    </div>
+                                                    <div class="live-outlined-time">
+                                                        PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="live-ticket-option">
+                                            <a href="">
+                                                <img src="assets/images/icons/ticket-btn.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <img src="assets/images/icons/left-slider-icon.svg" alt="">
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <img src="assets/images/icons/right-slider-icon.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news-update-section">
+    <div class="container-lg px-4 px-md-5 px-lg-0">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="sub-heading-title">
+                    <p class="pb-3 pb-md-4" data-aos="fade-up">
+                        / NEWS & UPDATES
+                    </p>
+                </div>
+                <div class="section-title d-block" data-aos="fade-up">
+                    <h1 class="hollow-heading">LATEST</h1>
+                    <h1 class="filled-heading">NEWS AND UPDATES</h1>
+                </div>
+            </div>
+            <div class="col-lg-5 align-items-end d-flex">
+                <p class="py-3 py-lg-0" data-aos="fade-up">
+                    Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla
+                    nunc.
+                    A diam quam et at viverra et.
+                </p>
+            </div>
+            <div class="col-lg-2 d-flex align-items-end" data-aos="fade-up">
+                <a class="purple fw-bold fs-18" href="">View all</a>
+            </div>
+        </div>
+        <div class="glide glideNews live-glide mt-3 mt-md-5">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="news-card-container" data-aos="flip-left">
+                            <div class="news-card-img">
+                                <img class="mw-100" src="assets/images/news-card-1.jpg" alt="">
+                            </div>
+                            <div class="news-card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="assets/images/icons/calender-icon.svg" alt="">
+                                    <p>
+                                        Saturday, May 12th
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals, Seals Group F Top Spot
+                                    </a>
+                                </div>
+                                <div class="news-card-btns">
+                                    <button class="btn">REFEREES</button>
+                                    <button class="btn">FOOTBALL DEVELOPMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="news-card-container" data-aos="flip-left">
+                            <div class="news-card-img">
+                                <img class="mw-100" src="assets/images/news-card-2.jpg" alt="">
+                            </div>
+                            <div class="news-card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="assets/images/icons/calender-icon.svg" alt="">
+                                    <p>
+                                        Saturday, May 12th
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals, Seals Group F Top Spot
+                                    </a>
+                                </div>
+                                <div class="news-card-btns">
+                                    <button class="btn">REFEREES</button>
+                                    <button class="btn">FOOTBALL DEVELOPMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="news-card-container" data-aos="flip-left">
+                            <div class="news-card-img">
+                                <img class="mw-100" src="assets/images/news-card-3.jpg" alt="">
+                            </div>
+                            <div class="news-card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="assets/images/icons/calender-icon.svg" alt="">
+                                    <p>
+                                        Saturday, May 12th
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals, Seals Group F Top Spot
+                                    </a>
+                                </div>
+                                <div class="news-card-btns">
+                                    <button class="btn">REFEREES</button>
+                                    <button class="btn">FOOTBALL DEVELOPMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <img src="assets/images/icons/left-slider-icon.svg" alt="">
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <img src="assets/images/icons/right-slider-icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rules-regulation-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 rules-left-container">
+                <div class="px-3 px-4 px-md-5" data-aos="fade-right">
+                    <div class="sub-heading-title">
+                        <p class="pb-3 pb-md-4">
+                            / WHAT WE ARE
+                        </p>
+                    </div>
+                    <div class="section-title">
+                        <h1 class="hollow-heading">FOOTBALL</h1>
+                        <h1 class="filled-heading">IN QATAR</h1>
+                    </div>
+                    <p class="text-white py-3 py-md-4">
+                        Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                    </p>
+                    <a href="" class="text-decoration-none know-more-button">
+                        <span>KNOW MORE</span>
+                        <div class="icon">
+                            <img class="mw-40" src="assets/images/icons/know-more-arrow.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 rules-right-container">
+                <div class="px-3 px-md-5">
+                    <div class="d-flex gap-3" data-aos="fade-left">
+                        <div>
+                            <img src="assets/images/icons/rule-reg-icon.svg" alt="">
+                        </div>
+                        <div class="text-white">
+                            <h1>
+                                RULES & REGULATIONS
+                            </h1>
+                            <p class="py-3">
+                                Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                            </p>
+                            <a href="" class="text-white fs-18 fw-semibold">
+                                LEARN MORE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ranking-section py-3 py-md-5">
+    <div class="container-lg px-4 px-md-5 px-lg-0">
+        <div class="ranking-container">
+            <div class="sub-heading-title">
+                <p class="pb-3 pb-md-4" data-aos="fade-up">
+                    / TEAM TABLE
+                </p>
+            </div>
+            <div class="section-title" data-aos="fade-up">
+                <h1 class="hollow-heading">FOOTBALL</h1>
+                <h1 class="filled-heading">RANKING</h1>
+            </div>
+            <div class="py-4 py-lg-5">
+                <ul class="nav nav-tabs" id="rankingTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="fifa-tab" data-bs-toggle="tab" data-bs-target="#fifa"
+                                type="button" role="tab">FIFA WORLD RANKING
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="asian-tab" data-bs-toggle="tab" data-bs-target="#asian"
+                                type="button" role="tab">ASIAN TEAMS RANKING
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="league-tab" data-bs-toggle="tab" data-bs-target="#league"
+                                type="button" role="tab">Ooredoo Stars League
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="rankingTabsContent">
+                    <div class="tab-pane fade show active" id="fifa" role="tabpanel">
+                        <div class="ranking-table-wrapper">
+                            <div class="ranking-table">
+                                <div class="ranking-header">
+                                    <div class="ranking-cell">Position</div>
+                                    <div class="ranking-cell">Team</div>
+                                    <div class="ranking-cell">Points</div>
+                                    <div class="ranking-cell">Previous Points</div>
+                                    <div class="ranking-cell">Recent Matches Results</div>
+                                </div>
+                                <div class="ranking-body">
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-1.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge success-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/success-up.svg" alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">02</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-2.svg" alt="France">
+                                            France
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1853.2</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">03</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-3.svg" alt="Spain">
+                                            Spain
+                                            <span class="badge success-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/success-up.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1853.2</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">04</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-4.svg" alt="England">
+                                            England
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1783.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">05</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-5.svg" alt="Brazil">
+                                            Brazil
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1683.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="asian" role="tabpanel">
+                        <div class="ranking-table-wrapper">
+                            <div class="ranking-table">
+                                <div class="ranking-header">
+                                    <div class="ranking-cell">Position</div>
+                                    <div class="ranking-cell">Team</div>
+                                    <div class="ranking-cell">Points</div>
+                                    <div class="ranking-cell">Previous Points</div>
+                                    <div class="ranking-cell">Recent Matches Results</div>
+                                </div>
+                                <div class="ranking-body">
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-1.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge success-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/success-up.svg" alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">02</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-2.svg" alt="France">
+                                            France
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1853.2</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">03</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-3.svg" alt="Spain">
+                                            Spain
+                                            <span class="badge success-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/success-up.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1853.2</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">04</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-4.svg" alt="England">
+                                            England
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1783.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">05</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-5.svg" alt="Brazil">
+                                            Brazil
+                                            <span class="badge fail-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/fail-down.svg"
+                                                 alt="">
+                                            +3
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1883.5</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">1683.5</div>
+                                        </div>
+                                        <div class="ranking-cell"><span class="result-badge win">W</span> <span
+                                                class="result-badge lose">L</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="league" role="tabpanel">
+                        <div class="ranking-table-wrapper">
+                            <div class="ranking-table">
+                                <div class="ranking-header">
+                                    <div class="ranking-cell">Position</div>
+                                    <div class="ranking-cell">Club</div>
+                                    <div class="ranking-cell">Matches</div>
+                                    <div class="ranking-cell">Points</div>
+
+                                </div>
+                                <div class="ranking-body">
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-1.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge success-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/success-up.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">8</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">17</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-2.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge success-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/success-up.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">8</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">17</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-3.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge fail-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/fail-down.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">8</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">17</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">01</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-4.svg"
+                                                 alt="Argentina">
+                                            Argentina
+                                            <span class="badge fail-badge badge-change">
+                                        <img class="status-icon" src="assets/images/icons/fail-down.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">8</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">17</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ranking-row">
+                                        <div class="ranking-cell position">05</div>
+                                        <div class="ranking-cell team">
+                                            <img src="assets/images/icons/flag-5.svg" alt="Brazil">
+                                            Brazil
+                                            <span class="badge success-badge badge-change">
+                                            <img class="status-icon" src="assets/images/icons/success-up.svg"
+                                                 alt="">
+                                        </span>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">8</div>
+                                        </div>
+                                        <div class="ranking-cell">
+                                            <div class="capsule">17</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="twitter-feed-section">
+    <div class="container-lg px-4 px-md-5 px-lg-0">
+        <div class="sub-heading-title">
+            <p class="" data-aos="fade-up">
+                / TWITTER FEEDS
+            </p>
+        </div>
+        <div class="glide glideTwitter live-glide mt-3 mt-md-5">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="twitter-card-container" data-aos="flip-right">
+                            <div class="twitter-card-img">
+                                <img class="mw-100" src="assets/images/twitter-card-1.png" alt="">
+                                <div class="twitter-icon">
+                                    <img src="assets/images/icons/x-black.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="twitter-card-body">
+                                <a href="" class="fs-20 py-3">
+                                    <span class="blue-purple">#AlAnnabi</span> is ready for tomorrow’s match! 🔥 <br>
+                                    <span
+                                            class="blue-purple">#Our_Journey_To2026</span>
+                                </a>
+                                <p class="status">
+                                    2 hr ago
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="twitter-card-container" data-aos="flip-right">
+                            <div class="twitter-card-img">
+                                <img class="mw-100" src="assets/images/twitter-card-2.png" alt="">
+                                <div class="twitter-icon">
+                                    <img src="assets/images/icons/x-black.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="twitter-card-body">
+                                <a href="" class="fs-20 py-3">
+                                    <span class="blue-purple">#AlAnnabi</span> is ready for tomorrow’s match! 🔥 <br>
+                                    <span
+                                            class="blue-purple">#Our_Journey_To2026</span>
+                                </a>
+                                <p class="status">
+                                    2 hr ago
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="twitter-card-container" data-aos="flip-right">
+                            <div class="twitter-card-img">
+                                <img class="mw-100" src="assets/images/twitter-card-1.png" alt="">
+                                <div class="twitter-icon">
+                                    <img src="assets/images/icons/x-black.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="twitter-card-body">
+                                <a href="" class="fs-20 py-3">
+                                    <span class="blue-purple">#AlAnnabi</span> is ready for tomorrow’s match! 🔥 <br>
+                                    <span
+                                            class="blue-purple">#Our_Journey_To2026</span>
+                                </a>
+                                <p class="status">
+                                    2 hr ago
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="twitter-card-container" data-aos="flip-right">
+                            <div class="twitter-card-img">
+                                <img class="mw-100" src="assets/images/twitter-card-3.png" alt="">
+                                <div class="twitter-icon">
+                                    <img src="assets/images/icons/x-black.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="twitter-card-body">
+                                <a href="" class="fs-20 py-3">
+                                    <span class="blue-purple">#AlAnnabi</span> is ready for tomorrow’s match! 🔥 <br>
+                                    <span
+                                            class="blue-purple">#Our_Journey_To2026</span>
+                                </a>
+                                <p class="status">
+                                    2 hr ago
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <img src="assets/images/icons/left-slider-icon.svg" alt="">
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <img src="assets/images/icons/right-slider-icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="media-section">
+    <div class="container-lg px-4 px-md-5 px-lg-0 py-4">
+        <div class="d-flex align-items-end justify-content-between mb-3 mb-md-4">
+            <div>
+                <div class="sub-heading-title">
+                    <p class="pb-3 pb-md-4" data-aos="fade-up">
+                        / MEDIA
+                    </p>
+                </div>
+                <div class="section-title" data-aos="fade-up">
+                    <h1 class="hollow-heading">IMAGES</h1>
+                    <h1 class="filled-heading">& VIDEOS</h1>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="purple fw-bold fs-18" href="">View all</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightgallery" class="gallery-grid">
+            <a href="https://www.youtube.com/watch?v=4WjtQjPQGIs" class="gallery-item large-item position-relative"
+               data-aos="flip-right" data-aos-duration="800">
+                <img src="assets/images/media-1.png"/>
+                <div class="media-player">
+                    <img src="assets/images/icons/media-play.svg" alt="">
+                </div>
+            </a>
+            <a href="assets/images/media-2.png" class="gallery-item large-item" data-aos="flip-up"
+               data-aos-duration="800">
+                <img src="assets/images/media-2.png"/>
+            </a>
+            <div class="gallery-item large-item d-grid inner-grid">
+                <a href="assets/images/media-3.png" style="aspect-ratio: 2/1" class="mb-2" data-aos="flip-right"
+                   data-aos-duration="800">
+                    <img src="assets/images/media-3.png"/>
+                </a>
+                <a href="assets/images/media-4.png" style="aspect-ratio: 2/1" data-aos="flip-up"
+                   data-aos-duration="800">
+                    <img src="assets/images/media-4.png"/>
+                </a>
+            </div>
+            <a href="assets/images/media-5.png" class="gallery-item large-item" data-aos="flip-right"
+               data-aos-duration="800">
+                <img src="assets/images/media-5.png"/>
+            </a>
+            <a href="assets/images/media-6.png" class="gallery-item large-item" data-aos="flip-right"
+               data-aos-duration="800">
+                <img src="assets/images/media-6.png"/>
+            </a>
+
+            <a href="assets/images/media-5.png" class="gallery-item" data-aos="flip-up" data-aos-duration="800">
+                <img src="assets/images/media-5.png"/>
+            </a>
+            <a href="https://www.youtube.com/watch?v=4WjtQjPQGIs" class="gallery-item position-relative"
+               data-aos="flip-right" data-aos-duration="800">
+                <img src="assets/images/media-7.png"/>
+                <div class="media-player">
+                    <img src="assets/images/icons/media-play.svg" alt="" data-aos="flip-right" data-aos-duration="800">
+                </div>
+            </a>
+            <a href="assets/images/media-8.png" class="gallery-item" data-aos="flip-right" data-aos-duration="800">
+                <img src="assets/images/media-8.png"/>
+
+            </a>
+            <a href="assets/images/media-9.png" class="gallery-item" data-aos="flip-up" data-aos-duration="800">
+                <img src="assets/images/media-9.png"/>
+            </a>
+            <div class="gallery-item large-item d-grid inner-grid">
+                <a href="assets/images/media-10.png" style="aspect-ratio: 2/1" class="mb-2" data-aos="flip-right"
+                   data-aos-duration="800">
+                    <img src="assets/images/media-10.png"/>
+                </a>
+                <a href="assets/images/media-11.png" style="aspect-ratio: 2/1" data-aos="flip-up"
+                   data-aos-duration="800">
+                    <img src="assets/images/media-11.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="text-white">
+    <div class="container-fluid">
+        <div class="row upper-footer-row">
+            <div class="col-lg-6">
+                <div class="container-lg">
+                    <div class="footer-left-content">
+                        <a class="navbar-brand d-none d-lg-block" href="#">
+                            <div class="logo-placeholder"></div>
+                        </a>
+                        <p class="pt-3 mw-60">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quod?
+                        </p>
+                        <div class="tc-header-socials">
+                            <a href="" class="header-social-wrapper">
+                                <img src="assets/images/icons/insta-vector.svg" alt="">
+                            </a>
+                            <a href="" class="header-social-wrapper">
+                                <img src="assets/images/icons/yt-vector.svg" alt="">
+                            </a>
+                            <a href="" class="header-social-wrapper">
+                                <img src="assets/images/icons/fb-vector.svg" alt="">
+                            </a>
+                            <a href="" class="header-social-wrapper">
+                                <img src="assets/images/icons/x-vector.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row footer-grid-container-1">
+                    <div class="col-lg-6 footer-grid-sec-1">
+                        <div>
+                            <h6 class="pb-3">
+                                QUICK LINKS
+                            </h6>
+                            <ul class="p-0">
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Home</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Competitions</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Football in Qatar</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">About us</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Careers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 footer-grid-sec-2">
+                        <div>
+                            <h6 class="pb-3">
+                                LOCATION
+                            </h6>
+                            <div>
+                                <p>
+                                    Al-Bidda Tower, Cornich
+                                </p>
+                                <p>
+                                    Fax: 44754300
+                                </p>
+                                <p>
+                                    P.O.Box: 5333
+                                </p>
+                                <p>
+                                    Doha - Qatar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 footer-grid-sec-3">
+                        <div>
+                            <h6 class="pb-3">
+                                PRIVACY & POLICY
+                            </h6>
+                            <ul class="p-0">
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Terms of use</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item list-unstyled">
+                                    <a class="nav-link" href="">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 footer-grid-sec-4">
+                        <div>
+                            <h6 class="pb-3">
+                                LOCATION
+                            </h6>
+                            <div>
+                                <p>
+                                    Phone: 44754444
+                                </p>
+                                <p>
+                                    info@qfa.qa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer-row">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-1.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-2.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-3.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-4.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-5.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-6.svg" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center pt-0 pt-md-5">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-7.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 pb-3">
+                    <img src="assets/images/f-logo-8.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Powered by Qatar Football Association
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+        integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.js"
+        integrity="sha512-vZGsugWaSqQZuW8N5Z3ild7Tk8NqiZjKffeIQGpnnIs6g7HVZaFZjlLKPIw1qDsrQ5KAxAGfBinglQWu6i/8DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/video/lg-video.min.js"></script>
+
+<!-- Isotope for masonry -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="assets/js/glideSlide.js"></script>
+<script src="assets/js/glideSlideTabTwo.js"></script>
+<script src="assets/js/glideNewsSlide.js"></script>
+<script src="assets/js/twitterSlide.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgVideo],
+        speed: 500,
+        videojs: true
+    });
+</script>
+<script>
+    window.onload = function () {
+        const title = document.getElementById('titleWrapper');
+        const paragraph = document.getElementById('tc-paragraph');
+        const statusPara = document.getElementById('tc-status-para')
+
+
+        title.classList.remove('invisible', 'opacity-0');
+        title.classList.add('visible', 'animate__animated', 'animate__zoomInLeft');
+
+        setTimeout(() => {
+            paragraph.classList.remove('invisible', 'opacity-0');
+            paragraph.classList.add('visible', 'animate__animated', 'animate__fadeInUp');
+        }, 500);
+        setTimeout(() => {
+            statusPara.classList.remove('invisible', 'opacity-0');
+            statusPara.classList.add('visible', 'animate__animated', 'animate__slideInDown');
+        }, 500);
+    };
+</script>
+
+
+</body>
+</html>

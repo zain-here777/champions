@@ -1,0 +1,163 @@
+@media (max-width: 1200px) {
+  .section-title {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .tc-header {
+    min-height: 550px;
+  }
+  .tc-header-title h1 {
+    font-size: 55px;
+  }
+  .tc-header-content {
+    p {
+      max-width: 100% !important;
+    }
+  }
+  .tc-header-content {
+    padding-bottom: 30px;
+  }
+  .tc-header-socials {
+    padding-right: 30px;
+  }
+  .live-matches-section {
+    padding-bottom: 0;
+  }
+  footer .footer-left-content {
+    padding: 40px;
+  }
+  footer .footer-grid-sec-1 {
+    border-left: 0;
+    border-bottom: 1px solid #6D5F7D;
+  }
+  footer .footer-grid-sec-2 {
+    border-left: 0;
+  }
+  footer .footer-grid-sec-3 {
+    border-left: 0;
+    border-bottom: 1px solid #6D5F7D;
+  }
+  footer .footer-grid-sec-4 {
+    border-left: 0;
+  }
+  .lower-footer-row {
+    padding: 40px !important;
+  }
+  .ranking-container {
+    padding: 30px 40px;
+  }
+  .ranking-container .nav-tabs .nav-link {
+    padding: 15px 18px 30px 18px;
+    font-size: 14px;
+  }
+  footer .footer-left-content {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tc-header {
+    min-height: 380px;
+  }
+  .tc-header-socials {
+    padding-right: 20px;
+    padding-top: 15px;
+  }
+  .tc-header-title h1 {
+    font-size: 40px;
+  }
+  .tc-header-content p {
+    font-size: 14px;
+  }
+  .header-controls {
+    gap: 25px;
+  }
+  .scroll-item {
+    span {
+      font-size: 12px;
+    }
+  }
+  .live-matches-section, .twitter-feed-section {
+    padding: 20px 0;
+  }
+  .section-title h1 {
+    font-size: 30px;
+  }
+  .live-matches-pill .nav-link {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .live-matches-pill {
+    max-width: 300px;
+  }
+  .news-card-container .news-card-body a {
+    font-size: 18px;
+  }
+  .rules-regulation-section .rules-left-container, .rules-regulation-section .rules-right-container {
+    min-height: 280px;
+  }
+  .twitter-feed-section {
+    .glide__arrow--left, .glide__arrow--right {
+      top: -25px;
+    }
+  }
+  footer {
+    .footer-grid-sec-1, .footer-grid-sec-2, .footer-grid-sec-3, .footer-grid-sec-4 {
+      padding: 30px;
+    }
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .ranking-container .nav-tabs {
+    flex-wrap: nowrap;
+  }
+  .twitter-feed-section{
+    .glide__slide{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .news-update-section {
+    .glide__arrow--left, .glide__arrow--right {
+      top: -25px;
+    }
+  }
+  .ranking-container {
+    padding: 30px 20px;
+    min-height: 100%;
+  }
+  .ranking-container .nav-tabs .nav-link {
+    font-size: 10px;
+  }
+  .ranking-container .ranking-cell {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .ranking-container .ranking-header, .ranking-container .ranking-row {
+    padding: 0.30rem;
+  }
+  .live-matches-section{
+    .glide__arrow--right, .glide__arrow--left{
+      top: -112px;
+    }
+  }
+  footer .lower-footer-row img{
+    max-width: 130px;
+  }
+}

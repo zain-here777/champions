@@ -1,0 +1,49 @@
+$clanRegular: 'ClanOT-Regular';
+$clanMedium: 'ClanOT-Medium';
+$clanBold: 'ClanOT-Bold';
+$clanBlack: 'ClanOT-Black';
+$clanThin: 'ClanOT-Thin';
+
+$purple: #2F1A45;
+$orange: #F26522;
+$yellow: #ffb92e;
+$pink: #ddbfe752;
+$maroon: #8C0321;
+$lightGray: #FBFBFB;
+$scoreGray: #899AA0;
+$lightPurple: #F4EAF7;
+$successGreen: #15AA9C;
+$failRed: #CC1A44;
+
+
+@font-face {
+  font-family: $clanThin ;
+  src: url('../fonts/ClanOT-NarrowThin.woff') format('woff'),
+  url('../fonts/ClanOT-NarrowThin.woff') format('woff');
+}
+
+@font-face {
+  font-family: $clanRegular ;
+  src: url('../fonts/ClanOT-NarrowNews.woff') format('woff'),
+  url('../fonts/ClanOT-NarrowNews.woff') format('woff');
+}
+
+@font-face {
+  font-family: $clanMedium;
+  src: url('../fonts/ClanOT-NarrowMedium.woff') format('woff'),
+  url('../fonts/ClanOT-NarrowMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: $clanBold;
+  src: url('../fonts/ClanOT-NarrowBold.woff') format('woff'),
+  url('../fonts/ClanOT-NarrowBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: $clanBlack;
+  src: url('../fonts/ClanOT-NarrowBlack.woff') format('woff'),
+  url('../fonts/ClanOT-NarrowBlack.woff') format('woff');
+}
+
+
